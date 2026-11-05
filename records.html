@@ -8,13 +8,13 @@
 </head>
 <body>
 <div class="deco">
-  <svg class="d-building" viewBox="0 0 300 160" fill="none" stroke="#4C9852" stroke-width="3"><rect x="30" y="60" width="100" height="90"/><rect x="150" y="30" width="70" height="120"/><line x1="80" y1="80" x2="100" y2="80"/><line x1="80" y1="105" x2="100" y2="105"/><line x1="25" y1="150" x2="230" y2="150"/></svg>
-  <svg class="d-tree" viewBox="0 0 280 160" fill="none" stroke="#3E97E8" stroke-width="3"><circle cx="80" cy="70" r="45"/><circle cx="140" cy="55" r="34"/><line x1="85" y1="115" x2="85" y2="150"/><line x1="200" y1="80" x2="200" y2="150"/><circle cx="200" cy="60" r="26"/></svg>
-  <svg class="d-doodle" viewBox="0 0 260 140" fill="none" stroke="#FFC94D" stroke-width="3"><path d="M40 30 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2 Z"/><rect x="120" y="70" width="52" height="46" rx="6"/><path d="M200 30 q14 -14 28 0 t28 0" stroke="#3E97E8"/></svg>
+  <svg class="d-arch" viewBox="0 0 340 220" fill="none"><path d="M20 200 V80 a60 60 0 0 1 120 0 V200 M140 200 V60 a70 70 0 0 1 140 0 V200"/><line x1="0" y1="200" x2="340" y2="200"/></svg>
+  <svg class="d-rule" viewBox="0 0 420 120" fill="none"><line x1="0" y1="30" x2="300" y2="30"/><line x1="0" y1="60" x2="420" y2="60"/><line x1="0" y1="90" x2="260" y2="90"/></svg>
 </div>
 
-<header class="nav"><div class="nav-in">
-  <div class="logo">🎒</div><div class="brand">校园失物招领</div>
+<header class="site"><div class="nav-in">
+  <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-5.1-7-11a7 7 0 0 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+  <div class="brand">校园失物招领</div>
   <div class="crumb">/ <b>我的记录</b></div>
   <nav class="links">
     <a href="index.html">招领大厅</a><a href="lost.html">发布失物</a><a href="found.html">发布招领</a><a class="on" href="records.html">我的记录</a>
@@ -22,28 +22,29 @@
 </div></header>
 
 <main class="wrap">
-  <div class="page-head">
-    <h1 class="title">我的记录</h1>
-    <p class="sub">我的认领申请 / 我的发布</p>
-  </div>
+  <div class="kicker">MY RECORDS</div>
+  <h1 class="title">我的记录</h1>
+  <p class="sub">我的认领申请 / 我的发布</p>
 
+  <div style="margin-top:26px">
   <div class="card rec ok">
-    <div class="l1">可领取 · 黑色耳机盒 F-1103-01 <span class="tag ok">可领取</span></div>
+    <div class="l1">黑色耳机盒 · F-1103-01 <span class="tag ok">可领取</span></div>
     <div class="li"><b>领取信息</b>11月4日 12:00–13:00 · 图书馆一楼服务台 · 请携带校园卡</div>
   </div>
   <div class="card rec y">
-    <div class="l1">待核验 · 蓝色保温杯 <span class="tag check">待核验</span></div>
+    <div class="l1">蓝色保温杯 <span class="tag check">待核验</span></div>
     <div class="li"><b>核验状态</b>等待服务台核对特征</div>
   </div>
   <div class="card rec g">
-    <div class="l1">已归还 · 灰色雨伞 <span class="tag done">已归还</span></div>
+    <div class="l1">灰色雨伞 <span class="tag done">已归还</span></div>
     <div class="li"><b>归还信息</b>10月28日已领取</div>
   </div>
   <div class="card rec">
-    <div class="li" style="margin-top:0"><b>状态说明</b><span class="flow">待核验 → <span>可领取</span> → 已归还</span></div>
+    <div class="li" style="margin-top:0"><b>状态说明</b><span class="flow">待核验 <span class="sep">→</span> <span>可领取</span> <span class="sep">→</span> 已归还</span></div>
+  </div>
   </div>
 
-  <div style="margin-top:20px"><button class="btn">查看领取详情</button></div>
+  <div style="margin-top:24px"><button class="btn">查看领取详情</button></div>
 </main>
 
 <footer>校园失物招领 · 让每一件失物都能回到主人身边</footer>
