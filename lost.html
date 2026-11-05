@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>发布失物 · 校园失物招领</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="deco">
+  <svg class="d-building" viewBox="0 0 300 160" fill="none" stroke="#4C9852" stroke-width="3"><rect x="30" y="60" width="100" height="90"/><rect x="150" y="30" width="70" height="120"/><line x1="45" y1="80" x2="65" y2="80"/><line x1="165" y1="55" x2="185" y2="55"/><line x1="25" y1="150" x2="230" y2="150"/></svg>
+  <svg class="d-track" viewBox="0 0 250 160" fill="none" stroke="#FF9F45" stroke-width="3"><ellipse cx="120" cy="80" rx="105" ry="55"/><ellipse cx="120" cy="80" rx="70" ry="34"/></svg>
+  <svg class="d-plane" viewBox="0 0 190 90" fill="none" stroke="#5FAE63" stroke-width="3"><path d="M10 60 L180 10 L95 80 L85 55 Z"/><path d="M40 78 q20 -6 34 4" stroke-dasharray="4 5"/></svg>
+  <svg class="d-doodle" viewBox="0 0 260 140" fill="none" stroke="#FFC94D" stroke-width="3"><path d="M40 30 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2 Z"/><rect x="120" y="70" width="52" height="46" rx="6"/><path d="M200 30 q14 -14 28 0 t28 0" stroke="#3E97E8"/></svg>
+</div>
+
+<header class="nav"><div class="nav-in">
+  <div class="logo">🎒</div><div class="brand">校园失物招领</div>
+  <div class="crumb">/ <b>发布失物</b></div>
+  <nav class="links">
+    <a href="index.html">招领大厅</a><a class="on" href="lost.html">发布失物</a><a href="found.html">发布招领</a><a href="records.html">我的记录</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <div class="page-head">
+    <h1 class="title">发布失物</h1>
+    <p class="sub">填写遗失线索，方便同学帮你寻找。带 * 的项目为必填项。</p>
+  </div>
+
+  <div class="card">
+    <div class="field"><label>物品名称 <i>*</i></label><input placeholder="黑色耳机盒"></div>
+    <div class="field"><label>物品分类 <i>*</i></label>
+      <select><option>数码配件</option><option>生活物品</option><option>书籍证件</option><option>钥匙卡类</option><option>其他</option></select>
+    </div>
+    <div class="field"><label>遗失地点 <i>*</i></label><input placeholder="主校区 · 图书馆二楼"></div>
+    <div class="field"><label>遗失时间 <i>*</i></label><input placeholder="11月3日 13:30 左右"></div>
+    <div class="field"><label>公开描述</label><input placeholder="黑色磨砂外壳，约掌心大小"></div>
+    <div class="field"><label>照片</label><input placeholder="+ 添加照片"><div class="aside">上传前请遮住学号等个人信息。</div></div>
+  </div>
+
+  <div style="margin-top:22px"><button class="btn">发布失物</button></div>
+</main>
+
+<footer>校园失物招领 · 让每一件失物都能回到主人身边</footer>
+</body>
+</html>

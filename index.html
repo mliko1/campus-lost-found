@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>招领大厅 · 校园失物招领</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="deco">
+  <svg class="d-building" viewBox="0 0 300 160" fill="none" stroke="#4C9852" stroke-width="3"><rect x="30" y="60" width="100" height="90"/><rect x="150" y="30" width="70" height="120"/><line x1="45" y1="80" x2="65" y2="80"/><line x1="80" y1="80" x2="100" y2="80"/><line x1="45" y1="105" x2="65" y2="105"/><line x1="80" y1="105" x2="100" y2="105"/><line x1="165" y1="55" x2="185" y2="55"/><line x1="200" y1="55" x2="205" y2="55"/><line x1="165" y1="85" x2="185" y2="85"/><line x1="25" y1="150" x2="230" y2="150"/></svg>
+  <svg class="d-tree" viewBox="0 0 280 160" fill="none" stroke="#3E97E8" stroke-width="3"><circle cx="80" cy="70" r="45"/><circle cx="140" cy="55" r="34"/><line x1="85" y1="115" x2="85" y2="150"/><line x1="140" y1="90" x2="140" y2="150"/><line x1="200" y1="80" x2="200" y2="150"/><circle cx="200" cy="60" r="26"/></svg>
+  <svg class="d-track" viewBox="0 0 250 160" fill="none" stroke="#FF9F45" stroke-width="3"><ellipse cx="120" cy="80" rx="105" ry="55"/><ellipse cx="120" cy="80" rx="70" ry="34"/><line x1="120" y1="25" x2="120" y2="46"/><line x1="120" y1="114" x2="120" y2="135"/></svg>
+  <svg class="d-plane" viewBox="0 0 190 90" fill="none" stroke="#5FAE63" stroke-width="3"><path d="M10 60 L180 10 L95 80 L85 55 Z"/><line x1="85" y1="55" x2="180" y2="10"/><path d="M40 78 q20 -6 34 4" stroke-dasharray="4 5"/></svg>
+  <svg class="d-doodle" viewBox="0 0 260 140" fill="none" stroke="#FFC94D" stroke-width="3"><path d="M40 30 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2 Z"/><rect x="120" y="70" width="52" height="46" rx="6"/><line x1="132" y1="86" x2="160" y2="86"/><line x1="132" y1="100" x2="152" y2="100"/><path d="M200 30 q14 -14 28 0 t28 0" stroke="#3E97E8"/></svg>
+</div>
+
+<header class="nav"><div class="nav-in">
+  <div class="logo">🎒</div><div class="brand">校园失物招领</div>
+  <div class="crumb">失物招领 / <b>招领大厅</b></div>
+  <nav class="links">
+    <a class="on" href="index.html">招领大厅</a><a href="lost.html">发布失物</a><a href="found.html">发布招领</a><a href="records.html">我的记录</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <div class="page-head">
+    <h1 class="title">校园失物招领</h1>
+    <p class="sub">按物品名称、拾获地点或分类查找。领取前需核验物品特征。</p>
+  </div>
+
+  <div class="search"><input placeholder="搜索物品"><button>搜索物品</button></div>
+  <div class="chips"><span class="chip on">全部校区</span><span class="chip">全部类别</span><span class="chip">待认领</span></div>
+
+  <div class="grid">
+    <div class="card item">
+      <div class="top"><div class="icon amber">🎧</div>
+        <div><h3>黑色耳机盒</h3><div class="meta">📍 图书馆二楼 · 11月3日</div></div></div>
+      <div class="foot"><span class="tag wait">待认领</span><a class="btn-mini" href="detail.html">查看详情</a></div>
+    </div>
+    <div class="card item">
+      <div class="top"><div class="icon">☕</div>
+        <div><h3>蓝色保温杯</h3><div class="meta">📍 东区食堂 · 11月2日</div></div></div>
+      <div class="foot"><span class="tag wait">待认领</span><a class="btn-mini" href="detail.html">查看详情</a></div>
+    </div>
+    <div class="card item">
+      <div class="top"><div class="icon green">☂️</div>
+        <div><h3>灰色雨伞</h3><div class="meta">📍 主校区 · 10月28日</div></div></div>
+      <div class="foot"><span class="tag done">已归还</span><a class="btn-mini" href="detail.html">查看详情</a></div>
+    </div>
+  </div>
+</main>
+
+<footer>校园失物招领 · 让每一件失物都能回到主人身边</footer>
+</body>
+</html>
