@@ -94,6 +94,10 @@ h1.title .dot{color:var(--accent)}
 .item .meta svg{width:12px;height:12px}
 .item .foot{display:flex;justify-content:space-between;align-items:center;margin-top:20px;padding-top:15px;border-top:1px solid var(--line-soft)}
 
+/* 搜索无结果时的空状态 */
+.empty{margin-top:28px;padding:34px 24px;text-align:center;font-size:13.5px;color:var(--ink3);
+  border:1px dashed var(--line);border-radius:12px;background:rgba(255,255,255,.5)}
+
 /* 状态标签：圆点 + 细边 */
 .tag{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;letter-spacing:.1em;padding:4px 12px;border-radius:999px;font-weight:500}
 .tag::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}

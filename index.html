@@ -30,10 +30,14 @@
       <p class="sub">按物品名称、拾获地点或分类查找。领取前需核验物品特征。</p>
       <div class="search">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg>
-        <input placeholder="搜索物品名称、地点或编号">
-        <button>搜索物品</button>
+        <input id="searchInput" placeholder="搜索物品名称、地点或编号">
+        <button id="searchBtn">搜索物品</button>
       </div>
-      <div class="chips"><span class="chip on">全部校区</span><span class="chip">全部类别</span><span class="chip">待认领</span></div>
+      <div class="chips">
+        <span class="chip on" data-filter="all">全部校区</span>
+        <span class="chip" data-filter="all">全部类别</span>
+        <span class="chip" data-filter="wait">待认领</span>
+      </div>
     </div>
     <div class="hero-art">
       <div class="a-circle"></div>
@@ -52,22 +56,22 @@
     <div class="stat"><b>1</b><span>已归还</span></div>
   </div>
 
-  <div class="grid">
-    <div class="card item">
+  <div class="grid" id="cardGrid">
+    <div class="card item" data-name="黑色耳机盒" data-place="主校区 图书馆二楼" data-status="wait">
       <div class="top">
         <div class="gi amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></div>
         <div><h3>黑色耳机盒</h3><div class="meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-6-5-6-10a6 6 0 0 1 12 0c0 5-6 10-6 10z"/><circle cx="12" cy="11" r="2"/></svg>图书馆二楼 · 11月3日</div></div>
       </div>
       <div class="foot"><span class="tag wait">待认领</span><a class="btn-mini" href="detail.html">查看详情 →</a></div>
     </div>
-    <div class="card item">
+    <div class="card item" data-name="蓝色保温杯" data-place="东区食堂" data-status="wait">
       <div class="top">
         <div class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 6h11v10a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V6z"/><path d="M16 8h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M8 3v1M11 3v1M14 3v1"/></svg></div>
         <div><h3>蓝色保温杯</h3><div class="meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-6-5-6-10a6 6 0 0 1 12 0c0 5-6 10-6 10z"/><circle cx="12" cy="11" r="2"/></svg>东区食堂 · 11月2日</div></div>
       </div>
       <div class="foot"><span class="tag wait">待认领</span><a class="btn-mini" href="detail.html">查看详情 →</a></div>
     </div>
-    <div class="card item">
+    <div class="card item" data-name="灰色雨伞" data-place="主校区" data-status="done">
       <div class="top">
         <div class="gi sand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9z"/><path d="M12 12v6a2 2 0 0 0 4 0"/></svg></div>
         <div><h3>灰色雨伞</h3><div class="meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-6-5-6-10a6 6 0 0 1 12 0c0 5-6 10-6 10z"/><circle cx="12" cy="11" r="2"/></svg>主校区 · 10月28日</div></div>
@@ -75,11 +79,14 @@
       <div class="foot"><span class="tag done">已归还</span><a class="btn-mini" href="detail.html">查看详情 →</a></div>
     </div>
   </div>
+
+  <p class="empty" id="emptyState" hidden>没有找到匹配的物品 — 换个关键词，或点「全部校区」重置筛选。</p>
 </main>
 
 <footer>
   <svg class="f-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-5.1-7-11a7 7 0 0 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
   校园失物招领 · 让每一件失物都能回到主人身边
 </footer>
+<script src="js/app.js"></script>
 </body>
 </html>
